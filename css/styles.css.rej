@@ -1,0 +1,36 @@
+diff a/css/styles.css b/css/styles.css	(rejected hunks)
+@@ -205,29 +205,29 @@
+     text-align: center;
+ }
+ 
+-.wine_card_0:not(.expanded .wine_card_0) {
++.wine_card_1:not(.expanded .wine_card_1) {
+     z-index: 5;
+ }
+ 
+-.wine_card_3:not(.expanded .wine_card_3){
++.wine_card_4:not(.expanded .wine_card_4){
+     z-index: 2;
+     filter: blur(1.5px);
+     opacity: 0.4;
+ }
+ 
+-.wine_card_1:not(.expanded .wine_card_1){
++.wine_card_2:not(.expanded .wine_card_2){
+     z-index: 4;
+     filter: blur(0.5px);
+     opacity: 0.8;
+ }
+ 
+-.wine_card_4:not(.expanded .wine_card_4) {
++.wine_card_5:not(.expanded .wine_card_5) {
+     z-index: 1;
+     filter: blur(2px);
+     opacity: 0.2;
+ }
+ 
+-.wine_card_2:not(.expanded .wine_card_2) {
++.wine_card_3:not(.expanded .wine_card_3) {
+     z-index: 3;
+     filter: blur(1px);
+     opacity: 0.6;

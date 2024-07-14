@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Wine Journal MVP</title>
+    <link rel="stylesheet" href="css/formstyles.css">
+    <script
+      src="https://kit.fontawesome.com/4802565ebc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="form.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <nav class="topnav" id="topnav">
+        <div class="expandable_elements">
+          <p class="page-title">My Personal Wine Journal</p>
+          <div class="link_list">
+            <ol>
+              <li><a class="active" href="/index.html#France">France</a></li>
+              <li><a class="active" href="/index.html#South_America">South America</a></li>
+              <li><a class="active" href="/index.html#Spain">Spain</a></li>
+              <li><a class="active" href="/index.html#Italy">Italy</a></li>
+              <li><a class="active" href="/index.html#oceania">Oceania</a></li>
+              <li><a class="active" href="/index.html#restofeurope">Rest of Europe</a></li>
+              <li><a class="active" href="/index.html#northamerica">North America</a></li>
+              <li><a class="active" href="/index.html#asia">Asia</a></li>
+              <li><a class="active" href="/index.html#africa">Africa</a></li>
+            </ol>
+          </div>
+          <div class="login">
+            <i class="fa-solid fa-user fa-2x"></i>
+            <p>Gregory Simmons</p>
+          </div>
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="menu-icon"
+          onclick="expand_nav_contents()"
+          aria-label="Expandable Menu Icon"
+        >
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </a>
+      </nav>
+
+      <div class="content_container">
+        <h1>Journal a New Wine</h1>
+        <div class="pointers">
+          <p class="pointer0">&darr;</p>
+          <p class="pointer1 hidden">&darr;</p>
+          <p class="pointer2 hidden">&darr;</p>
+          <p class="pointer3 hidden">&darr;</p>
+          <p class="pointer4 hidden">&darr;</p>
+        </div>
+        <div class="progressbar">
+          <div class="progress progress0 viewed">1</div>
+          <div class="progress progress1">2</div>
+          <div class="progress progress2">3</div>
+          <div class="progress progress3">4</div>
+          <div class="progress progress4">5</div>
+        </div>
+        <form action="" class="form1">
+            <h2>Upload an Image of the Label</h2>
+            <div class="display_image"></div>
+            <input type="file" id="image" class="image_input" accept="image/jpeg, image/png" aria-label="Image Input Area">
+        </form>
+        <form action="" class="form2 hidden">
+            <h2>Enter Wine Details</h2>
+            <select name="region" id="region" aria-label="Region Input Area">
+              <option id="region_placeholder" value="" disabled selected>Region</option>
+              <option value="france">France</option>
+              <option value="southamerica">South America</option>
+              <option value="spain">Spain</option>
+              <option value="italy">Italy</option>
+              <option value="oceania">Oceania</option>
+              <option value="restofeurope">Rest of Europe</option>
+              <option value="northamerica">North America</option>
+              <option value="africa">Africa</option>
+              <option value="asia">Asia</option>
+            </select>
+            <input type="text" placeholder="Name of Wine" id="wineName" maxlength="35" aria-label="Name of Wine Input Area">
+            <input type="text" placeholder="Producer" id="producer" aria-label="Producer Input Area">
+            <input type="text" placeholder="Vintage" id="vintage" aria-label="Vintage Input Area">
+            <input type="text" placeholder="Price" id="price" aria-label="Price Input Area">
+        </form>
+        <form action="" class="form3 hidden">
+            <h2>My Rating of the Bottle</h2>
+            <div class="star_rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </form>
+        <form action="" class="form4 hidden">
+            <h2>Choose Notable Tags for the Wine</h2>
+            <input type="text" placeholder="Enter Tag" class="input_tag" aria-label="Tag Input Area">
+            <button class="add_tag" aria-label="Submit Tags Button">Add Tag</button>
+            <div class="cloud"></div>
+        </form>
+        <form action="" class="form5 hidden">
+            <textarea id='notes' placeholder="Leave a description of the wine here..." aria-label="Description Input Area"></textarea>
+        </form>
+        <div class="form_buttons">
+            <button class="previous hidden"><p>&larr;</p> Previous</button>
+            <button class="next">Next<p>&rarr;</p></button>
+        </div>
+        <button class="submit hidden">Submit</button>         
+      </div>
+    </main>
+  </body>
+</html>

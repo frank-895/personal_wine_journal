@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="image" href="images/small_img/r1_w0.png">
+    <link rel="preload" as="image" href="images/small_img/r1_w1.jpg">
+    <link rel="preload" as="image" href="images/small_img/r1_w2.jpg">
+    <link rel="preload" as="image" href="images/small_img/r1_w3.jpg">
+    <link rel="preload" as="image" href="images/small_img/r1_w4.jpg">
+    <link rel="preload" as="image" href="images/small_img/r1_w5.jpg">
+    <link rel="preload" as="image" href="images/small_img/r1_w6.jpg">
+    <link rel="preload" as="image" href="images/small_img/r2_w0.jpg">
+    <link rel="preload" as="image" href="images/small_img/r2_w1.jpg">
+    <link rel="preload" as="image" href="images/small_img/r2_w2.jpg">
+    <link rel="preload" as="image" href="images/small_img/r3_w0.jpg">
+    <link rel="preload" as="image" href="images/small_img/r4_w0.jpg">
+    <link rel="preload" as="image" href="images/small_img/r4_w1.jpg">
+    <title>My Personal Wine Journal MVP</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script
+      src="https://kit.fontawesome.com/4802565ebc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+    <div class="headings">
+      <p>
+        Welcome to your very own wine journal. Say goodbye to lugging around an
+        old-fashioned pen and paper, becuase the future is here! Now you can
+        carry your whole journal and wine collection in your pocket.
+      </p>
+      <p>
+        Welcome to your very own wine journal. Say goodbye to lugging around an
+        old-fashioned pen and paper, becuase the future is here! Now you can
+        carry your whole journal and wine collection in your pocket.
+      </p>
+    </div>
+  </head>
+
+  <body>
+    <main>
+      <nav class="topnav" id="topnav">
+        <div class="expandable_elements">
+          <p class="page-title">My Personal Wine Journal</p>
+          <div class="link_list">
+            <ol>
+              <li><a class="active" href="#France">France</a></li>
+              <li><a class="active" href="#South_America">South America</a></li>
+              <li><a class="active" href="#Spain">Spain</a></li>
+              <li><a class="active" href="#Italy">Italy</a></li>
+              <li><a class="active" href="#oceania">Oceania</a></li>
+              <li><a class="active" href="#restofeurope">Rest of Europe</a></li>
+              <li><a class="active" href="#northamerica">North America</a></li>
+              <li><a class="active" href="#asia">Asia</a></li>
+              <li><a class="active" href="#africa">Africa</a></li>
+            </ol>
+          </div>
+          <div class="login">
+            <i class="fa-solid fa-user fa-2x"></i>
+            <p>Gregory Simmons</p>
+          </div>
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="menu-icon"
+          onclick="expand_nav_contents()"
+          aria-label="Expandable Menu Icon"
+        >
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </a>
+      </nav>
+      <div class="search_wrap">
+        <div style="position: relative">
+          <input
+            type="text"
+            id="find"
+            onkeyup="search()"
+            placeholder="Search for wines..."
+          />
+          <div id="suggestions" class="suggestions"></div>
+        </div>
+      </div>
+      <div class="content_container">
+        <a href="form.html" aria-label="Create a New Journal Entry">
+          <button class="new_wine" aria-label="New Journal Entry Button">
+            <i class="fa-solid fa-plus fa-5x"></i></button
+        ></a>
+        <h1>My Journal Entries</h1>
+        <h2 id="France">France</h2>
+        <div class="region france">
+          <p class="empty_region_message">
+            You have no journal entries for this region...
+          </p>
+          <div class="card_container">
+            <article class="wine_card wine_card_0">
+              <h3>Chateau Beau-Sejour Becot</h3>
+              <img
+                src="images/small_img/r1_w0.png"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Red Wine</span>
+                <span class="tag_cloud">Brett</span>
+                <span class="tag_cloud">Leather</span>
+                <span class="tag_cloud">Earth</span>
+                <span class="tag_cloud">Smoke</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r1_w0.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+
+            <article class="wine_card wine_card_1">
+              <h3>Les Hauts Partas</h3>
+              <img
+                src="images/small_img/r1_w1.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Champagne</span>
+                <span class="tag_cloud">Dry</span>
+                <span class="tag_cloud">Citrus</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r1_w1.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+
+            <article class="wine_card wine_card_2">
+              <h3>L'Orangerie de Cantemerle</h3>
+              <img
+                src="images/small_img/r1_w2.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Red Wine</span>
+                <span class="tag_cloud">Medium Tannin</span>
+                <span class="tag_cloud">Cherry</span>
+                <span class="tag_cloud">Dry</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r1_w2.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+
+            <article class="wine_card wine_card_3">
+              <h3>Les Millandes</h3>
+              <img
+                src="images/small_img/r1_w3.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Red Wine</span>
+                <span class="tag_cloud">Medium Tannin</span>
+                <span class="tag_cloud">Brett</span>
+                <span class="tag_cloud">Earth</span>
+                <span class="tag_cloud">Forest Floor</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r1_w3.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+
+            <article class="wine_card wine_card_4">
+              <h3>Champagne Michel Gonet</h3>
+              <img
+                src="images/small_img/r1_w4.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Champagne</span>
+                <span class="tag_cloud">Toasty</span>
+                <span class="tag_cloud">Brioche</span>
+                <span class="tag_cloud">Hazelnut</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r1_w4.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+
+            <article class="wine_card wine_card_5">
+              <h3>Comtesse Lafond Vintage 2014</h3>
+              <img
+                src="images/small_img/r1_w5.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Champagne</span>
+                <span class="tag_cloud">Oak</span>
+                <span class="tag_cloud">Brioche</span>
+                <span class="tag_cloud">Citrus</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r1_w5.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+
+            <article class="wine_card wine_card_6">
+              <h3>Chateau Negrit</h3>
+              <img
+                src="images/small_img/r1_w6.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Red Wine</span>
+                <span class="tag_cloud">French Oak</span>
+                <span class="tag_cloud">Dark Fruit</span>
+                <span class="tag_cloud">Spice</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r1_w6.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="card_controls">
+            <button class="previous" id="previous0">
+              <p>&larr;</p>
+              Previous
+            </button>
+            <button class="next" id="next0">
+              Next
+              <p>&rarr;</p>
+            </button>
+            <button class="expand">expand</button>
+          </div>
+        </div>
+
+        <h2 id="South_America">South America</h2>
+        <div class="region southamerica">
+          <p class="empty_region_message">
+            You have no journal entries for this region...
+          </p>
+          <div class="card_container">
+            <article class="wine_card wine_card_0">
+              <h3>Petit Caro</h3>
+              <img
+                src="images/small_img/r2_w0.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Red Wine</span>
+                <span class="tag_cloud">Smooth</span>
+                <span class="tag_cloud">Acidic</span>
+                <span class="tag_cloud">Dark Fruit</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r2_w0.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+
+            <article class="wine_card wine_card_1">
+              <h3>Clos Apalta</h3>
+              <img
+                src="images/small_img/r2_w1.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Red Wine</span>
+                <span class="tag_cloud">Tannin</span>
+                <span class="tag_cloud">Dark Fruit</span>
+                <span class="tag_cloud">Pepper</span>
+                <span class="tag_cloud">American Oak</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r2_w1.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+
+            <article class="wine_card wine_card_2">
+              <h3>Alta Vista</h3>
+              <img
+                src="images/small_img/r2_w2.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Red Wine</span>
+                <span class="tag_cloud">Tannin</span>
+                <span class="tag_cloud">Plum</span>
+                <span class="tag_cloud">Blackberry</span>
+                <span class="tag_cloud">Vegemite</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r2_w2.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="card_controls">
+            <button class="previous" id="previous1">
+              <p>&larr;</p>
+              Previous
+            </button>
+            <button class="next" id="next1">
+              Next
+              <p>&rarr;</p>
+            </button>
+            <button class="expand">expand</button>
+          </div>
+        </div>
+
+        <h2 id="Spain">Spain</h2>
+        <div class="region spain">
+          <p class="empty_region_message">
+            You have no journal entries for this region...
+          </p>
+          <div class="card_container">
+            <article class="wine_card wine_card_0">
+              <h3>Vina Tondonia</h3>
+              <img
+                src="images/small_img/r3_w0.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Red Wine</span>
+                <span class="tag_cloud">American Oak</span>
+                <span class="tag_cloud">Smooth</span>
+                <span class="tag_cloud">Spice</span>
+                <span class="tag_cloud">Vanilla</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r3_w0.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="card_controls">
+            <button class="previous" id="previous2">
+              <p>&larr;</p>
+              Previous
+            </button>
+            <button class="next" id="next2">
+              Next
+              <p>&rarr;</p>
+            </button>
+            <button class="expand">expand</button>
+          </div>
+        </div>
+
+        <h2 id="Italy">Italy</h2>
+        <div class="region italy">
+          <p class="empty_region_message">
+            You have no journal entries for this region...
+          </p>
+          <div class="card_container">
+            <article class="wine_card wine_card_0">
+              <h3>Santodeno</h3>
+              <img
+                src="images/small_img/r4_w0.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Red Wine</span>
+                <span class="tag_cloud">Tannin</span>
+                <span class="tag_cloud">Pepper</span>
+                <span class="tag_cloud">Ripe Cherry</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r4_w0.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+
+            <article class="wine_card wine_card_1">
+              <h3>Terre di Faiano</h3>
+              <img
+                src="images/small_img/r4_w1.jpg"
+                alt="Picture of wine label">
+              <div class="star_rating">
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-solid fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+                <i class="fa-regular fa-star fa-2x"></i>
+              </div>
+              <div class="cloud">
+                <span class="tag_cloud">Red Wine</span>
+                <span class="tag_cloud">Stewed Cherry</span>
+                <span class="tag_cloud">Spice</span>
+                <span class="tag_cloud">Slight Sweetness</span>
+              </div>
+              <div class="buttons">
+                <a href="see_more_pages/r4_w1.html"
+                  ><button class="expand-button">See more...</button></a
+                >
+              </div>
+            </article>
+          </div>
+          <div class="card_controls">
+            <button class="previous" id="previous3">
+              <p>&larr;</p>
+              Previous
+            </button>
+            <button class="next" id="next3">
+              Next
+              <p>&rarr;</p>
+            </button>
+            <button class="expand">expand</button>
+          </div>
+        </div>
+
+        <h2 id="oceania">Oceania</h2>
+        <div class="region oceania">
+          <p class="empty_region_message">
+            You have no journal entries for this region...
+          </p>
+          <div class="card_container"></div>
+          <div class="card_controls">
+            <button class="previous" id="previous4">
+              <p>&larr;</p>
+              Previous
+            </button>
+            <button class="next" id="next4">
+              Next
+              <p>&rarr;</p>
+            </button>
+            <button class="expand">expand</button>
+          </div>
+        </div>
+
+        <h2 id="restofeurope">Rest of Europe</h2>
+        <div class="region restofeurope">
+          <p class="empty_region_message">
+            You have no journal entries for this region...
+          </p>
+          <div class="card_container"></div>
+          <div class="card_controls">
+            <button class="previous" id="previous5">
+              <p>&larr;</p>
+              Previous
+            </button>
+            <button class="next" id="next5">
+              Next
+              <p>&rarr;</p>
+            </button>
+            <button class="expand">expand</button>
+          </div>
+        </div>
+
+        <h2 id="northamerica">North America</h2>
+        <div class="region northamerica">
+          <p class="empty_region_message">
+            You have no journal entries for this region...
+          </p>
+          <div class="card_container"></div>
+          <div class="card_controls">
+            <button class="previous" id="previous6">
+              <p>&larr;</p>
+              Previous
+            </button>
+            <button class="next" id="next6">
+              Next
+              <p>&rarr;</p>
+            </button>
+            <button class="expand">expand</button>
+          </div>
+        </div>
+
+        <h2 id="asia">Asia</h2>
+        <div class="region asia">
+          <p class="empty_region_message">
+            You have no journal entries for this region...
+          </p>
+          <div class="card_container"></div>
+          <div class="card_controls">
+            <button class="previous" id="previous7">
+              <p>&larr;</p>
+              Previous
+            </button>
+            <button class="next" id="nex78">
+              Next
+              <p>&rarr;</p>
+            </button>
+            <button class="expand">expand</button>
+          </div>
+        </div>
+
+        <h2 id="africa">Africa</h2>
+        <div class="region africa">
+          <p class="empty_region_message">
+            You have no journal entries for this region...
+          </p>
+          <div class="card_container"></div>
+          <div class="card_controls">
+            <button class="previous" id="previous8">
+              <p>&larr;</p>
+              Previous
+            </button>
+            <button class="next" id="next8">
+              Next
+              <p>&rarr;</p>
+            </button>
+            <button class="expand">expand</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

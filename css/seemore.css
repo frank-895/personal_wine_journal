@@ -1,0 +1,239 @@
+/* Variables */
+:root {
+    --primary: #355070;
+    --dark: #3b1f4e;
+    --light: #eaac8b; 
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Layout */
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8));
+}
+
+.content_container {
+    width: 90%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+}
+
+nav ol {
+    display: block;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+nav p {
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav .link_list * {
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--primary);
+    border: 0;
+}
+
+nav .expandable_elements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.return_button {
+    margin: 20px;
+    font-size: 20px;
+}
+
+/* Icons */
+.fa-star {
+    color: var(--light);
+    margin: 5px;
+}
+
+.fa-user, .menu-icon i {
+    color: white;
+    margin: 10px;
+}
+
+.menu-icon {
+    max-height: 45px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Center all text elements */
+    box-sizing: border-box;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.return_button {
+    text-align: center; /* Center the return button */
+    margin-bottom: 2rem;
+}
+
+.return_button a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition */
+    font-size: 20px;
+}
+
+.return_button a:hover {
+    color: #0056b3; /* Darken on hover for emphasis */
+}
+
+.details {
+    display: block;
+    unicode-bidi: isolate;
+    margin-bottom: 2rem;
+}
+
+.details p {
+    font-size: 1.2rem; 
+    font-weight: bold;
+    line-height: 1.5; /* Increase line spacing */
+    margin: 10px 0; 
+}
+
+.details span {
+    font-weight: lighter;
+    margin-right: 10px; 
+}
+
+.Flavours {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.Flavours .Tags {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333; 
+    font-size: 1.2em; 
+    margin-bottom: 10px; 
+    border-bottom: 2px solid #ccc; 
+}
+
+.Flavours ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    color: #555; 
+    margin-bottom: 6px; 
+}
+
+.Notes {
+    background-color: #f4f4f4;
+    padding: 1.5rem; 
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center; 
+}
+
+.Notes h3 {
+    font-size: 1.3rem; 
+    font-weight: bold; 
+    margin-bottom: 1rem;
+}
+
+.Notes p {
+    font-size: 1rem; 
+    line-height: 1.5; 
+    margin: 10px 0; 
+}
+
+.wine_image {
+    text-align: center; 
+    margin-bottom: 2rem;
+}
+
+.wine_image img {
+    width: 30%; 
+    transition: transform 0.3s; /* Smooth hover transition */
+}
+
+.wine_image img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media all and (min-width: 1550px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1250px) {
+    .content_container {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1550px) {
+    .topnav .expandable_elements *:not(.page-title, .menu-icon, .menu-icon *){
+        display: none;
+    }
+
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .topnav.responsive .expandable_elements {
+        position: relative;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .topnav.responsive .expandable_elements *:not(.fa-user) {
+        display: block;
+    }
+}

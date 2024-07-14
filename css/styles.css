@@ -1,0 +1,467 @@
+/* Variables */
+:root {
+    --primary: #355070;
+    --dark: #3b1f4e;
+    --light: #eaac8b; 
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Layout */
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8));
+}
+
+.content_container {
+    width: 90%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    padding: 100px;
+}
+
+.content_container > p {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+}
+
+nav p {
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ol{
+    display: block;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+nav .link_list * {
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--primary);
+    border: 0;
+}
+
+nav .expandable_elements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search_wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.headings {
+    display: flex;
+    background-color: #eaac8b;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+.headings p {
+    margin:10px;
+    position: relative;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: moveText 60000ms linear infinite;
+}
+
+input {
+    display: flex;
+    background: white;
+    border: 2px solid var(--primary);
+    font-size: 18px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.suggestions {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 80%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestions div:hover {
+    background-color: var(--light);
+}
+
+.new_wine {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: var(--light);
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 6;
+}
+
+.new_wine:hover {
+    cursor: pointer;
+    height: 90px;
+    width: 90px;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+h2 {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.region {
+    width: 100%;
+}
+
+.card_container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 500px;
+    position: relative;
+}
+
+.empty_region_message {
+    font-size: 20px;
+}
+
+.card_container:empty {
+    display: none;
+}
+
+.expanded {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.expanded .wine_card {
+    margin: 10px;
+}
+
+.wine_card:not(.expanded .wine_card) {
+    position: absolute;
+    gap: 10px;
+}
+
+/* Cards */
+.wine_card {
+    width: 300px;
+    height: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+.hide {
+    display: none;
+}
+
+.card_controls {
+    display: flex;
+    justify-content: center;
+}
+
+.card_controls button {
+    border: 0;
+    background-color: white;
+    font-size: 20px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.card_controls button:hover {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.wine_card h3{
+    text-align: center;
+}
+
+.wine_card_0:not(.expanded .wine_card_0) {
+    z-index: 5;
+}
+
+.wine_card_3:not(.expanded .wine_card_3){
+    z-index: 2;
+    filter: blur(1.5px);
+    opacity: 0.4;
+}
+
+.wine_card_1:not(.expanded .wine_card_1){
+    z-index: 4;
+    filter: blur(0.5px);
+    opacity: 0.8;
+}
+
+.wine_card_4:not(.expanded .wine_card_4) {
+    z-index: 1;
+    filter: blur(2px);
+    opacity: 0.2;
+}
+
+.wine_card_2:not(.expanded .wine_card_2) {
+    z-index: 3;
+    filter: blur(1px);
+    opacity: 0.6;
+}
+
+article h3 {
+    color: var(--light);
+    font-size: 25px;
+    margin: 10px;
+}
+
+.cloud {
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.tag_cloud {
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: #722F37;
+    margin-bottom: 8px;
+    margin-left: 3px;
+    margin-right: 3px; 
+    font-size: 12px;
+}
+
+/* Image */
+article img {
+    display: block;
+    height: 200px;
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 3px;
+    border: white solid 1.5px;
+}
+
+/* Icons */
+.fa-star {
+    color: var(--light);
+    margin: 5px;
+    font-size: 25px;
+}
+
+.fa-user, .menu-icon i {
+    color: white;
+    margin: 10px;
+}
+
+.menu-icon {
+    max-height: 45px;
+}
+
+article p {
+    color: white;
+    font-size: 16px;
+    text-align: left;
+}
+
+article button {
+    background-color: var(--light);
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+    width: 120px;
+}
+
+.disabled_link {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+button p {
+    display: inline;
+}
+
+.wine_card_0 button:hover, .expanded .wine_card button:hover {
+    background-color: var(--dark);
+    color: white;
+    cursor: pointer;
+}
+
+@media all and (min-width: 700px) {
+    .wine_card_1:not(.expanded .wine_card_1) {
+        transform: translateX(12.5vw);
+    }
+    
+    .wine_card_2:not(.expanded .wine_card_2) {
+        transform: translateX(25vw);
+    }
+
+    .wine_card_3:not(.expanded .wine_card_3) {
+        transform: translateX(37.5vw);
+    }
+    
+    .wine_card_4:not(.expanded .wine_card_4) {
+        transform: translateX(50vw);
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .content_container{
+        padding: 30px;
+    }
+}
+
+@media all and (min-width: 1550px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1250px) {
+    .content_container {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1550px) {
+    .topnav .expandable_elements *:not(.page-title, .menu-icon, .menu-icon *){
+        display: none;
+    }
+
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .topnav.responsive .expandable_elements {
+        position: relative;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .topnav.responsive .expandable_elements *:not(.fa-user) {
+        display: block;
+    }
+}
+
+@media all and (min-width: 400px) and (max-width: 700px) {
+    .wine_card_4:not(.expanded .wine_card_4) {
+        transform: translateX(80px);
+    }
+
+    .wine_card_2:not(.expanded .wine_card_2){
+        transform: translateX(40px);
+    }
+
+    .wine_card_3:not(.expanded .wine_card_3){
+        transform: translateX(60px);
+    }
+
+    .wine_card_1:not(.expanded .wine_card_1) {
+        transform: translateX(20px);   
+    }
+
+}
+
+@media all and (min-width: 400px) {
+    .wine_card_1, .wine_card_2, .wine_card_3, .wine_card_4, .wine_card_0 {
+        box-shadow: 0px 3px 18px 3px rgba(0,0,0,0.4);
+    }
+}
+
+@media all and (max-width: 500px) {
+    button p {
+        display: none;
+    }
+
+    .content_container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    input {
+        width: 100%;
+        font-size: 16px;
+        padding: 8px;
+    }
+    
+    .suggestions {
+        width: calc(100% - 20px);
+    }
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

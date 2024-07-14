@@ -1,0 +1,401 @@
+/* Variables */
+:root {
+    --primary: #355070;
+    --dark: #3b1f4e;
+    --light: #eaac8b; 
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Layout */
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8));
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.content_container {
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.content_container p:not(.pointers p) {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.topnav {
+    z-index: 2;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+}
+
+nav ol {
+    display: block;
+}
+
+nav li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+nav p {
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav .link_list * {
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--primary);
+    border: 0;
+}
+
+nav .expandable_elements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.return_button {
+    margin: 20px;
+    font-size: 20px;
+}
+
+/* Icons */
+.fa-star {
+    color: var(--light);
+    margin: 5px;
+}
+
+.fa-user, .menu-icon i {
+    color: white;
+    margin: 10px;
+}
+
+.menu-icon {
+    max-height: 45px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.pointers {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pointers * {
+    width: 35px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.progressbar {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress {
+    width: 35px;
+    height: 35px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.viewed {
+    background-color: yellow;
+}
+
+.valid {
+    background-color: lightgreen;
+}
+
+.progressbar .denied {
+    background-color: red;
+    color: white;
+}
+
+form .denied {
+    border-color: red;
+}
+
+.display_image {
+    display: block;
+    height: 300px;
+    width: 225px;
+    border-radius: 3px;
+    border: var(--dark) solid 1.5px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    height: 100%;
+}
+
+h2 {
+    margin: 10px;
+}
+
+.form1 input {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.form2 input {
+    width: 95%;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.form2 select {
+    height: 40px;
+    font-size: 20px;
+    margin: 10px;
+    width: 95%;
+}
+
+.region_placeholder {
+    color: lightgrey
+}
+
+.star_rating {
+    text-align: center;
+}
+
+.fa-star {
+    color: var(--light);
+    margin: 10px;
+    font-size: 60px;
+}
+
+.fa-star:hover {
+    cursor: pointer;
+    opacity: 20%;
+}
+
+.form4 input {
+    width: 70%;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.add_tag {
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    padding-left: 5px;
+    margin: 10px;
+}
+
+.cloud {
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tag_cloud {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    color: white;
+    border-radius: 25px;
+    background-color: #722F37;
+    margin: 8px;
+  }
+
+.tag_cloud p {
+    margin: 7px;
+    margin-left: 15px;
+  }
+
+
+.tag_cloud button {
+    height: 100%;
+    border-radius: 25px;
+    width: 40px;
+    background-color: #722F37;
+    color: white;
+    border: none;
+}
+
+.tag_cloud button:hover {
+    background-color: var(--light);
+}
+
+.form5 textarea {
+    width: 95%;
+    margin: 10px;
+    height: 100%;
+    padding: 10px;
+    font-size: 15px;
+    resize: none;
+}
+
+form.hidden {
+    display: none;
+}
+
+button p {
+    display: inline;
+}
+
+.form_buttons {
+    width: 100%;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_buttons button {
+    border: 0;
+    background-color: white;
+    font-size: 20px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.form_buttons .previous {
+    order: 1;
+}
+.form_buttons .next {
+    order: 2;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.submit {
+    height: 60px;
+    border: none;
+    background-color: var(--light);
+    font-size: 30px;
+    padding: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.submit:hover {
+    font-weight: bold;
+}
+
+.form_buttons button:hover {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media all and (max-width: 500px) {
+    button p {
+        display: none;
+    }
+
+    .fa-star {
+        font-size: 40px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .fa-star {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .content_container {
+        height: auto;
+        width: 100vw;
+        border-radius: 0px;
+        position: absolute;
+        top: 45px;
+        bottom: 0px;
+        margin: 0px;
+    }
+}
+
+@media all and (min-width: 1550px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1550px) {
+    .topnav .expandable_elements *:not(.page-title, .menu-icon, .menu-icon *){
+        display: none;
+    }
+
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .topnav.responsive .expandable_elements {
+        position: relative;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .topnav.responsive .expandable_elements *:not(.fa-user) {
+        display: block;
+    }
+}
