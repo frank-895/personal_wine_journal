@@ -1,4 +1,4 @@
-***Personal Wine Journal Website***
+## Personal Wine Journal Website
 
 This repository contains the development of a Personal Wine Journal Website, aimed at wine enthusiasts and businesses to digitally manage their wine consumption and collections. The website allows users to privately track wines they’ve consumed, upload photos, and note tasting details. For businesses, it serves as a wine database, enabling them to manage their cellars and provide tasting notes to staff for customer queries.
 
@@ -45,14 +45,18 @@ We believe there is a strong demand for a digital solution to replace physical w
 
 **Lessons Learned**
 
-This project was a learning experience in developing websites using key web technologies, including HTML, CSS3, JavaScript, and JSON. Through building the Personal Wine Journal, I gained hands-on experience in:
+This project was a valuable learning experience in developing websites using key web technologies, including HTML, CSS3, JavaScript, and JSON. Through building the Personal Wine Journal, I gained hands-on experience in:
 
 - HTML: Structuring web pages and understanding the foundation of web development.
 - CSS3: Implementing responsive designs and layouts to ensure the website works well on various screen sizes.
 - JavaScript: Adding interactivity, including DOM manipulation and handling user input for recording and displaying data.
 - JSON: Storing and managing user data such as wine tasting notes and bottle specifications in a structured format.
 
-This project improved my ability to work with the front-end web stack and provided a solid understanding of how to create dynamic, interactive web applications.
+Additionally, I gained insight into collaborating in Agile and Lean development environments. Working within these frameworks helped me:
+
+- Agile: Understand the importance of iterative development, regular feedback, and continuous improvement. I learned how to break down tasks into manageable sprints and actively collaborate with team members to adjust priorities and ensure the project stayed on track.
+- Lean: Focus on efficiency by reducing waste and optimizing workflow. This approach encouraged me to refine processes, deliver functional components quickly, and emphasize user value throughout development.
+This project not only improved my ability to work with the front-end web stack but also provided a solid understanding of how to create dynamic, interactive web applications while applying Agile and Lean methodologies to deliver high-quality software efficiently
 
 **Future Improvements**
 - Back-End Integration: Connect the website to a back-end server and database to store user entries and account information.
