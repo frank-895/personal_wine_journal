@@ -1,12 +1,10 @@
-## Personal Wine Journal Website
+# Personal Wine Journal Website
 
 This repository contains the development of a Personal Wine Journal Website, aimed at wine enthusiasts and businesses to digitally manage their wine consumption and collections. The website allows users to privately track wines they’ve consumed, upload photos, and note tasting details. For businesses, it serves as a wine database, enabling them to manage their cellars and provide tasting notes to staff for customer queries.
 
-**Project Goals**
+## Project Goals
 
-*Personal Wine Journal:*
-
-Allow users to create an account and maintain a private journal of wines they have consumed or purchased.
+Allow users to maintain a private journal of wines they have consumed or purchased.
 
 Users can:
 - Upload photos of wine bottles.
@@ -18,20 +16,20 @@ Wine Database for Businesses:
 - Enable businesses to manage their cellar and record tasting notes for staff to provide accurate information to customers.
 - Provide easy access to wine specifications like vintage, region, and varietal.
 
-**Features**
+## Features
 
-*Wine Entry Management:*
+### Wine Entry Management
 -Upload and store photos of wine bottles.
 -Record tasting notes such as aroma, flavor profile, finish, and overall rating.
 -Store additional wine details (e.g., vintage, producer, varietal, region).
 
-*Searchable Wine Collection:*
+ ### Searchable Wine Collection
 - Users can easily search for specific wines in their collection by name, region, vintage, or tasting notes.
 
-*Private Records:* 
+### Private Records
 - Unlike other wine apps or websites, all information stored is private and visible only to the user.
 
-*Wine Database for Businesses:*
+### Wine Database for Businesses
 - Businesses can use the platform to maintain a digital wine cellar.
 - Staff can access tasting notes and wine details to assist customers.
 
