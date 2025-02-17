@@ -1,10 +1,10 @@
-# Personal Wine Journal Website
+# Personal Wine Journal Website 🍷🍷🍷
 
 This repository contains the development of a Personal Wine Journal Website, aimed at wine enthusiasts and businesses to digitally manage their wine consumption and collections. The website allows users to privately track wines they’ve consumed, upload photos, and note tasting details. For businesses, it serves as a wine database, enabling them to manage their cellars and provide tasting notes to staff for customer queries.
 
 ## Project Goals
 
-Allow users to maintain a private journal of wines they have consumed or purchased. *This website is developed in raw HTML, CSS and JavaScript and intended purely as a learning exercise.* It also acts as a proof of concept, while allowing us to understand the key underlying components of a webpage.
+**This website is developed in raw HTML, CSS and JavaScript and is intended purely as a learning exercise.** It also acts as a proof of concept, while allowing us to understand the key underlying components of a webpage. In practice, this website requires significantly further improvement, including further backend integration with a database to allow accounts to be created to store the information. However, as you will see later, this project was a **fantastic** opporunity to learn valuable skills and concepts relating to web development ([Lessons Learned](#lessons-learned)).
 
 Users can:
 - Upload photos of wine bottles.
