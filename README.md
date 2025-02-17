@@ -19,9 +19,9 @@ Wine Database for Businesses:
 ## Features
 
 ### Wine Entry Management
--Upload and store photos of wine bottles.
--Record tasting notes such as aroma, flavor profile, finish, and overall rating.
--Store additional wine details (e.g., vintage, producer, varietal, region).
+- Upload and store photos of wine bottles.
+- Record tasting notes such as aroma, flavor profile, finish, and overall rating.
+- Store additional wine details (e.g., vintage, producer, varietal, region).
 
 ### Searchable Wine Collection
 - Users can easily search for specific wines in their collection by name, region, vintage, or tasting notes.
