@@ -4,7 +4,7 @@ This repository contains the development of a Personal Wine Journal Website, aim
 
 ## Project Goals
 
-Allow users to maintain a private journal of wines they have consumed or purchased.
+Allow users to maintain a private journal of wines they have consumed or purchased. *This website is developed in raw HTML, CSS and JavaScript and intended purely as a learning exercise.* It also acts as a proof of concept, while allowing us to understand the key underlying components of a webpage.
 
 Users can:
 - Upload photos of wine bottles.
@@ -23,7 +23,7 @@ Wine Database for Businesses:
 -Record tasting notes such as aroma, flavor profile, finish, and overall rating.
 -Store additional wine details (e.g., vintage, producer, varietal, region).
 
- ### Searchable Wine Collection
+### Searchable Wine Collection
 - Users can easily search for specific wines in their collection by name, region, vintage, or tasting notes.
 
 ### Private Records
@@ -33,7 +33,7 @@ Wine Database for Businesses:
 - Businesses can use the platform to maintain a digital wine cellar.
 - Staff can access tasting notes and wine details to assist customers.
 
-**Hypothesis**
+## Hypothesis
 
 We believe there is a strong demand for a digital solution to replace physical wine journals, with a focus on privacy and ease of use. The following hypotheses guide the development of this project:
 
@@ -41,7 +41,7 @@ We believe there is a strong demand for a digital solution to replace physical w
 - Moderate-Risk/Moderate-Value: Users want to maintain a personal collection of wines they’ve consumed or purchased and have it accessible across devices.
 - Low-Risk/Moderate-Value: Users want a searchable collection, allowing them to find specific wines easily.
 
-**Lessons Learned**
+## Lessons Learned
 
 This project was a valuable learning experience in developing websites using key web technologies, including HTML, CSS3, JavaScript, and JSON. Through building the Personal Wine Journal, I gained hands-on experience in:
 
@@ -56,7 +56,7 @@ Additionally, I gained insight into collaborating in Agile and Lean development 
 - Lean: Focus on efficiency by reducing waste and optimizing workflow. This approach encouraged me to refine processes, deliver functional components quickly, and emphasize user value throughout development.
 This project not only improved my ability to work with the front-end web stack but also provided a solid understanding of how to create dynamic, interactive web applications while applying Agile and Lean methodologies to deliver high-quality software efficiently
 
-**Future Improvements**
+## Future Improvements
 - Back-End Integration: Connect the website to a back-end server and database to store user entries and account information.
 - Mobile App: Develop a mobile version of the website for easier access on the go.
 - Advanced Search Filters: Implement more complex search functionalities like filtering by wine rating, price, or wine type.
