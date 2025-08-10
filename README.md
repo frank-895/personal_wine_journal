@@ -2,6 +2,18 @@
 
 This repository contains the development of a Personal Wine Journal Website, aimed at wine enthusiasts and businesses to digitally manage their wine consumption and collections. The website allows users to privately track wines they’ve consumed, upload photos, and note tasting details. For businesses, it serves as a wine database, enabling them to manage their cellars and provide tasting notes to staff for customer queries.
 
+## Legacy Version
+
+**Important:** This project began is a app built with raw HTML, CSS, and JavaScript — no frameworks or databases — created during my early web development learning journey. It was basic and visually rough but served as a vital proof of concept. This original version helped me understand the core building blocks of the web and laid the foundation for more advanced projects.
+
+Building on the lessons learned, I have developed a new, modern version of this app — called [Vintager](https://github.com/frank-895/vintager). It’s a fully functional playground that showcases how a professional wine menu management system can work, including advanced features like:
+- Interactive wine list editing (simulated in the playground)
+- Tasting note tagging and filtering
+- Stock management and detailed wine profiles
+- Mobile-friendly UI designed for sommeliers, hospitality teams, and guests
+
+This new version demonstrates my growth as a developer, moving from static pages to a dynamic, feature-rich React app with a database backend. It’s a tangible example of how far I’ve come and a preview of what custom automation solutions can look like for small businesses.
+
 ## Project Goals
 
 **This website is developed in raw HTML, CSS and JavaScript and is intended purely as a learning exercise.** It also acts as a proof of concept, while allowing us to understand the key underlying components of a webpage. In practice, this website requires significantly further improvement, including further backend integration with a database to allow accounts to be created to store the information. However, as you will see later, this project was a **fantastic** opporunity to learn valuable skills and concepts relating to web development ([Lessons Learned](#lessons-learned)).
@@ -61,3 +73,4 @@ This project not only improved my ability to work with the front-end web stack b
 - Mobile App: Develop a mobile version of the website for easier access on the go.
 - Advanced Search Filters: Implement more complex search functionalities like filtering by wine rating, price, or wine type.
 - Wine Pairing Suggestions: Add a feature where users receive food pairing suggestions based on the wines they record.
+
